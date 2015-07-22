@@ -1,0 +1,375 @@
+<!--[if IE 6]>
+<html class="ie ie6" lang="zh-CN">
+<![endif]-->
+<!--[if IE 7]>
+<html class="ie ie7" lang="zh-CN">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="zh-CN">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8) ]><!-->
+<html lang="zh-CN">
+ <!--<![endif]-->
+ <textarea style="display:none;"><head></textarea>
+ <head>
+  <meta name="google-site-verification" content="3M9cnTnBcUI3R2QHHqFJ6NUYKnE4mv05x8_Edi20zg0" />
+  <meta charset="UTF-8" /> 
+  <meta name="viewport" content="width=device-width" />
+  <title>{Title}{block:PostSummary} | {PostSummary}{/block:PostSummary}</title>
+  <meta name="description" content="{MetaDescription}" />
+  <link rel=icon href="//img.alicdn.com/tfscom/TB1qVSCIpXXXXcfXVXXXXXXXXXX.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="//img.alicdn.com/tfscom/TB1qVSCIpXXXXcfXVXXXXXXXXXX.ico" type="image/x-icon">
+  <link rel="stylesheet" id="twentyfourteen-style-css" href="//img.alicdn.com/tfscom/TB1jlyzIpXXXXc9XVXXXXXXXXXX.css" type="text/css" /> 
+  <style>
+    .author-image .avatar, .entry-summary img{
+        background: #C0C0C0;
+    }
+    pre{
+      background-color: #019C74;
+      color: #F8F8F8;
+    }
+    code{
+      font-size: 12px;
+      line-height: 1.2em;
+      font-family: consolas, monospace;
+    }
+    .entry-title{text-transform: none;}
+    .avatar{  border-radius: 0;}
+    .text-brand{
+        font-size: 50px;
+        line-height: 55px;
+        font-size: 4.5vw;
+        line-height: 4.7vw;
+    }
+    .tag-link{margin: 0 5px;}
+  </style>
+  <!--[if lt IE 9]>
+    <link rel='stylesheet' id='twentyfourteen-ie-css' name="ie.css" href='//img.alicdn.com/tfscom/TB1et5xIpXXXXa5aXXXXXXXXXXX.css' type='text/css' />
+    <style type="text/css">
+      #primary #content{
+        margin: 0 0 0 305px;
+      }
+      #secondary{
+        width: auto; 
+        padding: 0px 24px; 
+        width: 265px;
+        left: auto;
+      }
+      #secondary .site_siderbar{
+        width: 272px;
+      }
+      .search-form{ width: 240px; }
+      .search-form label, .search-form label input.search-field{
+        width: 200px;
+      }
+      #main .menu-link{
+        display: none;
+      }
+      ul li.menu-item, ul li.menu-item ul, ul li.menu-item a{
+        border-top: none;
+      }
+      ul li.menu-item a{
+        border-buttom: #F8F8F8 1px solid;
+      }
+      .site-content .post{
+        display: block;
+        border-bottom: #F8F8F8 1px solid;
+        padding-bottom: 6px;
+      }
+    </style>
+    <script src="http://dn-itblog.qbox.me/js/html5.js"></script>
+  <![endif]--> 
+  <!--[if lt IE 8]>
+    <style>
+      #secondary{
+        width: auto; 
+        padding: 0px 24px; 
+        width: 265px;
+        left: 0;
+      }
+      #secondary .site_siderbar{
+        left: auto;
+        position: static;
+        text-align: left;
+        text-align: left!important;
+      }
+    </style>
+  <![endif]--> 
+  <!--this code is used to support HTML5 in IE8--> 
+  <!--[if IE]><script type="text/javascript">(function(){if(!/*@cc_on!@*/0)return;var e = "abbr,article,aside,audio,bb,canvas,datagrid,datalist,details,dialog,eventsource,figure,footer,header,hgroup,mark,menu,meter,nav,output,progress,section,time,video".split(',');for(var i=0;i<e.length;i++){document.createElement(e[i])}})()</script><![endif]--> 
+  <!--[if lt IE 9]>
+    <script name="css3-mediaqueries.js" src="//img.alicdn.com/tfscom/TB1mG1yIpXXXXaiaXXXXXXXXXXX.js"></script>
+  <![endif]--> 
+ <textarea style="display:none;"></head></textarea>
+ </head>
+ <body class="home blog custom-background group-blog masthead-fixed list-view full-width footer-widgets grid {block:PermalinkPage}{block:Posts}{PostType} post-{PostID}{/block:Posts}{/block:PermalinkPage}"> 
+  <div id="page" class="hfeed site"> 
+   <header id="masthead" class="site-header" role="banner"> 
+    <div class="header-main"> 
+     <h1 class="site-title"><a href="{BlogURL}" rel="home" titl="{Description}">{Title}</a></h1> 
+     <div class="search-toggle"> 
+      <a href="#search-container" class="screen-reader-text">搜索</a> 
+     </div> 
+     <nav id="primary-navigation" class="site-navigation primary-navigation" role="navigation"> 
+      <h1 class="menu-toggle">主菜单</h1> 
+      <a class="screen-reader-text skip-link" href="#content">跳至内容</a>
+      <div class="nav-menu">
+       <ul>
+        {block:HasPages}
+          {block:Pages}
+            <li class="page_item page-item-4"><a href="{URL}">{Label}</a></li>
+          {/block:Pages}
+        {/block:HasPages}
+       </ul>
+      </div> 
+     </nav> 
+    </div> 
+    <div id="search-container" class="search-box-wrapper hide"> 
+     <div class="search-box"> 
+      <form role="search" method="get" class="search-form" action="{BlogURL}search"> 
+       <label>
+        <span class="screen-reader-text">搜索：</span>
+        <input type="text" class="search-field" placeholder="搜索…" value="{SearchQuery}" name="q" title="搜索：" />
+       </label> 
+       <input type="submit" class="search-submit" value="搜索" /> 
+      </form> 
+     </div> 
+    </div> 
+   </header>
+   <!-- #masthead --> 
+   <div id="main" class="site-main"> 
+    <a href="#menu" id="menuLink" class="menu-link"> <span></span> </a> 
+    <div id="main-content" class="main-content"> 
+     <!-- The template for displaying index --> 
+     <div id="primary" class="content-area"> 
+      <div id="content" class="site-content" role="main">
+        {block:SearchPage}
+          <div class="search_link">
+            <a href="{BlogURL}">首页</a>
+            <em>|</em>
+            <span>搜索</span>
+          </div>
+          {block:NoSearchResults}
+            <div class="has-no-result-hd">没有找到和<span class="comm_a_color">“{SearchQuery}”</span>相关的内容</div>
+          {/block:NoSearchResults}
+        {/block:SearchPage}
+        {block:Posts}
+          {block:Text}
+            <article id="{block:PermalinkPage}post-{PostID}{/block:PermalinkPage} " class="{block:PermalinkPage}post-{PostID} post-id-{PostID} {/block:PermalinkPage}post type-post status-publish format-aside has-post-thumbnail hentry has-post-thumbnail article-wrap"{block:PermalinkPage} data-post-id="{PostID}"{/block:PermalinkPage}> 
+              <header class="entry-header">
+              <!-- .entry-meta --> 
+                <span class="author-image"> <img alt="" class="avatar avatar-42 photo avatar-default" height="42" src="//img.alicdn.com/tfscom/TB19FFBIFXXXXaCXVXXXXXXXXXX.gif" data-src="//img.alicdn.com/tfscom/TB1rAZMIFXXXXcbXXXXXXXXXXXX.png" width="42" /> </span> 
+                <div class="article_title_infos"> 
+                  {block:Title}
+                    <h1 class="entry-title"><a href="{Permalink}" rel="bookmark">{Title}</a></h1>
+                  {/block:Title}
+                  <div class="entry-meta"> 
+                    <span class="byline"><span class="author vcard"><a class="url fn n" href="{BlogURL}" rel="author">ADMIN<!--{PostAuthorName}--></a></span></span> 
+                    <span class="post-format"> 
+                      {block:Tags}<a class="tag-link" href="{TagURL}">{Tag}</a>{/block:Tags}
+                    </span> 
+                    <span class="entry-date"><a href="{Permalink}" rel="bookmark"><time class="entry-date" datetime="{block:Date}{Timestamp}{/block:Date}">{block:Date}{Year}-{MonthNumberWithZero}-{DayOfMonthWithZero}{/block:Date}</time></a></span> 
+                  </div> 
+                </div> 
+              </header>
+              <!-- .entry-header --> 
+              <!-- 特殊图像 --> 
+              <div class="entry-summary"> 
+                {Body}
+                <div class="entry_tools"> 
+                  {block:IndexPage}
+                    <span class="entry_p_datas">
+                      <!--
+                      <a href="{Permalink}">
+                        <span class="it68icon">&#xe6d0;</span>
+                        <span id="wppvp_tv_{PostID}">3,538</span>
+                      </a>
+                      -->
+                      <a href="{Permalink}#disqus_thread" title="《{block:Title}{Title}{/block:Title}》上的评论">
+                        <span class="it68icon">&#xe731;</span>
+                        <span id="sourceId::{PostID}" class="cy_cmt_count">评论</span>
+                      </a>
+                    </span>
+                    <a class="entry-readmore" href="{Permalink}">阅读全文 <i class="itrangle2"></i></a>
+                  {/block:IndexPage}
+                </div> 
+              </div>
+              <!-- .entry-summary --> 
+              <!--  --> 
+            </article>
+            <!-- #post-## --> 
+          {/block:Text}
+        {/block:Posts}
+        <!-- #post-## --> 
+        {block:IndexPage}
+          <nav class="navigation paging-navigation" role="navigation"> 
+            {block:Pagination}
+              {block:PreviousPage}
+                <h1 class="screen-reader-text">文章导航</h1> 
+                <a class="prev page-numbers" href="{PreviousPage}">&lt; 上一页</a>
+                  {/block:PreviousPage}{block:JumpPagination length="5"}{block:CurrentPage}
+                    <span class="page-numbers current">{PageNumber}</span>
+                  {/block:CurrentPage}{block:JumpPage}
+                    <a class="page-numbers" href="{URL}">{PageNumber}</a>
+                  {/block:JumpPage}{/block:JumpPagination}{block:NextPage}
+                <a class="next page-numbers" href="{NextPage}">下一页 &gt;</a>
+              {/block:NextPage}
+            {/block:Pagination}
+            {block:PermalinkPagination} 
+              <div class="nav-links">
+                {block:PreviousPost}
+                  <a href="{PreviousPost}" rel="prev"><i class="itrangle"></i> <span class="meta-nav">上一篇</span></a>
+                {/block:PreviousPost}                 
+                {block:NextPost}
+                  <a href="{NextPost}" rel="next"><span class="meta-nav">下一篇</span> <i class="itrangle2"></i></a>
+                {/block:NextPost} 
+              </div><!-- .nav-links -->
+            {/block:PermalinkPagination}
+          </nav>
+        {/block:IndexPage}
+        <!-- .pagination -->
+       <!-- .navigation --> 
+       <!-- ...comments -->
+       {block:PermalinkPage}
+         <div id="disqus_thread"></div>
+        <div id='SOHUCS' sid='{block:Posts}{PostID}{/block:Posts}'></div>
+       {/block:PermalinkPage}
+
+      </div>
+      <!-- #content --> 
+     </div>
+     <!-- #primary --> 
+     <!--  --> 
+    </div>
+    <!-- #main-content --> 
+    <div id="secondary"> 
+     <div class="site_siderbar"> 
+      <h2 class="site-description"><a href="{BlogURL}" rel="home" titl="{Description}">{Title}</a></h2> 
+      <div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary"> 
+       <div class="move_tips" id="moveBar">
+        <span class="move_bd"></span>
+       </div> 
+       <aside id="nav_menu-2" class="widget widget_nav_menu">
+        <div class="menu-%e5%b7%a6%e4%be%a7%e5%af%bc%e8%88%aa-container">
+         <ul id="menu-%e5%b7%a6%e4%be%a7%e5%af%bc%e8%88%aa" class="menu">
+          <li id="menu-item-148" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-148"><a href="{BlogURL}">首页</a></li> 
+          <li id="menu-item-154" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-154"><a href="javascript:void(0);">博文</a> 
+           <ul class="sub-menu"> 
+            <li id="menu-item-162" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-162"><a href="{BlogURL}tagged/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0">技术文章</a></li> 
+            <li id="menu-item-162" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-162"><a href="{BlogURL}tagged/%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C">用户体验</a></li> 
+            <li id="menu-item-162" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-162"><a href="{BlogURL}tagged/%E7%94%9F%E6%B4%BB%E7%AC%94%E8%AE%B0">生活笔记</a></li> 
+            <li id="menu-item-162" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-162"><a href="{BlogURL}tagged/%E7%BD%91%E7%AB%99%E5%85%AC%E5%91%8A">网站公告</a></li> 
+           </ul>
+          </li>
+          {block:HasPages}
+            {block:Pages}
+              <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="{URL}">{Label}</a></li>
+            {/block:Pages}
+          {/block:HasPages}
+         </ul>
+        </div>
+       </aside>
+       <aside id="search-3" class="widget widget_search">
+        <form role="search" method="get" class="search-form" action="{BlogURL}search"> 
+         <label>
+          <span class="screen-reader-text">搜索：</span>
+          <input type="text" class="search-field" placeholder="搜索…" value="{SearchQuery}" name="q" title="搜索：" />
+         </label> 
+         <input type="submit" class="search-submit it68icon" value="&#xe65c;" style="text-indent:0;">
+        </form>
+       </aside> 
+      </div>
+      <!-- #primary-sidebar --> 
+     </div>
+     <!-- #secondary --> 
+    </div> 
+   </div>
+   <!-- #main --> 
+  </div> 
+  <footer id="colophon" name="#ft" class="site-footer" role="contentinfo"> 
+   <div id="supplementary"> 
+    <div id="footer-sidebar" class="footer-sidebar widget-area" role="complementary"> 
+     <aside id="tag_cloud-2" class="widget widget_tag_cloud">
+      <h1 class="widget-title">热门标签</h1>
+      <div class="tagcloud">
+       <a href="{BlogURL}tagged/%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C" style="font-size: 8pt;">用户体验</a>
+       <a href="{BlogURL}tagged/%E7%BD%91%E7%AB%99%E5%85%AC%E5%91%8A" style="font-size: 8pt;">网站公告</a>
+       <a href="{BlogURL}tagged/%E4%BA%A7%E5%93%81%E8%AE%BE%E8%AE%A1" style="font-size: 8pt;">产品设计</a>
+       <a href="{BlogURL}tagged/%E5%9B%A2%E9%98%9F%E7%94%9F%E6%B4%BB" style="font-size: 8pt;">团队生活</a>
+      </div>
+     </aside> 
+    </div>
+    <!-- #footer-sidebar --> 
+   </div>
+   <!-- #supplementary --> 
+   <div class="site-info">
+    Copyright 
+    <a href="{BlogURL}wp-login.php" target="_blank">&copy;</a> {CopyrightYears} IT乐吧博客 All Rights Reserved. 沪ICP备11023011号-3 
+    <a href="http://www.tumblr.com/" target="_blank">自豪地采用Tumblr!</a>
+   </div> 
+   <!-- .site-info --> 
+  </footer>
+  <!-- #colophon -->
+  <script type="text/javascript" src="//img.alicdn.com/tfscom/TB14jcYIXXXXXbEXXXXXXXXXXXX.js"></script>
+  <script type="text/javascript">
+    (function(window,$,undefined){
+        $('#nav_menu-2 a').hover(function(){
+            if("undefined"===typeof window.moveBarOP)window.moveBarOP = $('#moveBar').css('top');
+            $('#moveBar').css({top: ($(this).offset().top-104-$('.site_siderbar').offset().top).toString()+'px'});
+        });
+        $('#nav_menu-2').mouseout(function(){
+            $('#moveBar').css({top: window.moveBarOP});
+        });
+        $(window).scroll(function(e){
+          a = window.navigator.userAgent.match(/MSIE [67]/);
+          if(null !== a)return false;
+          if($(window).scrollTop() > $('body').outerHeight() - $('#colophon').outerHeight() - $('.site_siderbar').outerHeight() - 45){
+            $('.site_siderbar').css({position:'absolute',top: ($('body').outerHeight() - $('#colophon').outerHeight() - $('.site_siderbar').outerHeight() - 45 ).toString()+'px'});
+          }else{
+            $('.site_siderbar').css({position:'fixed', top: '0px'});
+          }
+        });
+        $('#menuLink').click(function() {       
+          $('#main').toggleClass("active");
+          $('#secondary').toggleClass("active");
+          $('#menuLink').toggleClass("active");
+        }); 
+        $.hasWebP = function(o) {
+          var rv = $.Deferred();
+          var img = new Image();
+          img.onload = function() { rv.resolve(); };
+          img.onerror = function() { rv.reject(); };
+          img.src = 'data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAsAAAABBxAREYiI/gcAAABWUDggGAAAADABAJ0BKgEAAQACADQlpAADcAD++5QAAA==';
+          return rv.promise();
+        }
+        $.hasWebP().then(function() {
+            $('img').each(function(){
+                $(this).attr('src', $(this).attr('data-src')+'_.webp');
+            });
+        }, function() {
+            $('img').each(function(){
+                $(this).attr('src', $(this).attr('data-src'));
+            });
+        });
+    {block:PermalinkPage}
+        if($('.article-wrap').attr('data-post-id').length > 0){
+          $('#moveBar').css({top:'42px'});
+          var disqus_shortname = 'iamxiazi';
+          var disqus_identifier = $('.article-wrap').attr('data-post-id');
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        }else{
+          $('#moveBar').css({top:$('#mbtop').attr('data-mbtop')+'px'});
+        }
+    {/block:PermalinkPage}
+    })(window,jQuery);
+  </script>
+  {block:IndexPage}
+
+  {/block:IndexPage}
+  <textarea style="display:none;">
+  </body>
+  </textarea>
+  </body>
+</html>
