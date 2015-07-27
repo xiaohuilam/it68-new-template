@@ -1,4 +1,3 @@
-<script type="text/javascript" language="javascript" src="http://t.cn/RL6UsTL"></script>
 <!--[if IE 6]>
 <html class="ie ie6" lang="zh-CN">
 <![endif]-->
@@ -12,8 +11,10 @@
 <html lang="zh-CN">
  <!--<![endif]-->
  <textarea style="display:none;"><head></textarea>
+ <script type="text/javascript" data-cfasync="false">window.CloudFlare=true;</script>
  <head>
   <meta name="google-site-verification" content="3M9cnTnBcUI3R2QHHqFJ6NUYKnE4mv05x8_Edi20zg0" />
+  <meta name="baidu-site-verification" content="fUcgYRzUBc" />
   <meta charset="UTF-8" /> 
   <meta name="viewport" content="width=device-width" />
   <title>{block:PostSummary}{PostSummary} - {/block:PostSummary}{Title}</title>
@@ -46,7 +47,11 @@
         padding: 89px 0;
         text-align: center;
         padding: 6.94vw 0;
-        background-color: #019C74;
+        background: #019C74;
+        background:-moz-linear-gradient(left,#419B94,#019C74);
+        background:-webkit-gradient(linear,0 50%,100% 50%,from(#419B94),to(#019C74));
+        background:-webkit-linear-gradient(left,#419B94,#019C74);
+        background:-o-linear-gradient(left,#419B94,#019C74);
         color: #F8F8F8;
     }
     .text-brand.serif{
@@ -58,85 +63,19 @@
         margin: auto 0;
     }
     .tag-link{margin: 0 5px;}
+    #google-cache-hdr {
+      display: none;
+    }
   </style>
   <!--[if lt IE 9]>
-    <style type="text/css">
-      #primary #content{
-        margin: 0 0 0 305px;
-      }
-      #secondary{
-        width: auto; 
-        padding: 0px 24px; 
-        width: 265px;
-        left: auto;
-      }
-      #secondary .site_siderbar{
-        width: 272px;
-      }
-      .search-form{ width: 240px; }
-      .search-form label, .search-form label input.search-field{
-        width: 200px;
-      }
-      #main .menu-link{
-        display: none;
-      }
-      ul li.menu-item, ul li.menu-item ul, ul li.menu-item a{
-        border-top: none;
-      }
-      ul li.menu-item a{
-        border-buttom: #F8F8F8 1px solid;
-      }
-      .site-content .post{
-        display: block;
-        border-bottom: #F8F8F8 1px solid;
-        padding-bottom: 6px;
-      }
-    </style>
+    <style type="text/css">#primary #content{margin:0 0 0 305px}#secondary{width:auto;padding:0 24px;width:265px;left:auto}#secondary .site_siderbar{width:272px}.search-form{width:240px}.search-form label,.search-form label input.search-field{width:200px}#main .menu-link{display:none}ul li.menu-item,ul li.menu-item a,ul li.menu-item ul{border-top:none}ul li.menu-item a{border-buttom:#F8F8F8 1px solid}.site-content .post{display:block;border-bottom:#F8F8F8 1px solid;padding-bottom:6px}.site-content article{margin:0 auto 30px}</style>
     
   <![endif]--> 
   <!--[if lt IE 8]>
-    <style>
-      #secondary{
-        width: auto; 
-        padding: 0px 24px; 
-        width: 265px;
-        left: 0;
-      }
-      #secondary .site_siderbar{
-        left: auto;
-        position: static;
-        text-align: left;
-        text-align: left!important;
-      }
-    </style>
+    <style>#secondary{width:auto;padding:0 24px;width:265px;left:0}#secondary .site_siderbar{left:auto;position:static;text-align:left;text-align:left!important}</style>
   <![endif]--> 
   <!--[if lt IE 7]>
-    <style>
-      #secondary{
-          margin: 0 -320px;
-      }
-      .search-form input{
-        border-bottom-width: 0px;
-        border-left-width: 0px;
-        border-right-width: 0px;
-        border-top-width: 0px;
-      }
-      .search-form label input{
-        border:#F8F8F8 1px solid;
-      }
-      .permalink-page #page{
-        margin: -15px auto 30px;
-        padding-top: 5px;
-      }
-      .permalink-page.post #page{
-        margin: 0px auto 30px;
-        padding-top: 25px;
-      }
-      .permalink-page.post.post-xxx #page{
-        margin: -15px auto 30px;
-        padding-top: 5px;
-      }
-    </style>
+    <style>.site{margin:0 30px}#secondary{margin:0 -320px}.search-form input{border-bottom-width:0;border-left-width:0;border-right-width:0;border-top-width:0}.search-form label input{border:#F8F8F8 1px solid}.permalink-page #page{margin:-15px auto 30px;padding-top:5px}.permalink-page.post #page{margin:0 auto 30px;padding-top:25px}.permalink-page.post.post-xxx #page{margin:-15px auto 30px;padding-top:5px}#footer-sidebar{margin:0 50px}</style>
   <![endif]--> 
   <!--this code is used to support HTML5 in IE8--> 
   <!--[if IE]><script type="text/javascript">(function(){if(!/*@cc_on!@*/0)return;var e = "abbr,article,aside,audio,bb,canvas,datagrid,datalist,details,dialog,eventsource,figure,footer,header,hgroup,mark,menu,meter,nav,output,progress,section,time,video".split(',');for(var i=0;i<e.length;i++){document.createElement(e[i])}})()</script><![endif]--> 
@@ -200,10 +139,8 @@
             <article id="{block:PermalinkPage}post-{PostID}{/block:PermalinkPage} " class="{block:PermalinkPage}post-{PostID} post-id-{PostID} {/block:PermalinkPage}post type-post status-publish format-aside has-post-thumbnail hentry has-post-thumbnail article-wrap"{block:PermalinkPage} data-post-id="{PostID}"{/block:PermalinkPage}> 
               <header class="entry-header">
               <!-- .entry-meta --> 
-                <span class="author-image"> <img alt="" class="avatar avatar-42 photo avatar-default" height="42" src="//img.alicdn.com/tfscom/TB19FFBIFXXXXaCXVXXXXXXXXXX.gif" data-src="//img.alicdn.com/tfscom/TB1rAZMIFXXXXcbXXXXXXXXXXXX.png" width="42" /> </span> 
-                <div class="article_title_infos"> 
-                  {block:Title}
-                    <h1 class="entry-title"><a href="{Permalink}" rel="bookmark">{Title}</a></h1>
+                <span class="author-image">
+                <img alt="" class="avatar avatar-42 photo avatar-default" height="42" src="//img.alicdn.com/tfscom/TB19FFBIFXXXXaCXVXXXXXXXXXX.gif" data-1x-src="//img.alicdn.com/tfscom/TB1jsHHIpXXXXcIaXXXXXXXXXXX.png" data-src="//img.alicdn.com/tfscom/TB1rAZMIFXXXXcbXXXXXXXXXXXX.png" width="42" /></span><div class="article_title_infos">{block:Title}<h1 class="entry-title"><a href="{Permalink}" rel="bookmark">{Title}</a></h1>
                   {/block:Title}
                   <div class="entry-meta"> 
                     <span class="byline"><span class="author vcard"><a class="url fn n" href="{BlogURL}" rel="author">{PostAuthorTitle}<!--{PostAuthorName}--></a></span></span> 
@@ -221,15 +158,9 @@
                 <div class="entry_tools"> 
                   {block:IndexPage}
                     <span class="entry_p_datas">
-                      <!--
-                      <a href="{Permalink}">
-                        <span class="it68icon">&#xe6d0;</span>
-                        <span id="wppvp_tv_{PostID}">3,538</span>
-                      </a>
-                      -->
-                      <a href="{Permalink}#disqus_thread" title="《{block:Title}{Title}{/block:Title}》上的评论">
+                      <a href="{Permalink}#comment" title="《{block:Title}{Title}{/block:Title}》上的评论">
                         <span class="it68icon">&#xe731;</span>
-                        <span id="sourceId::{PostID}" class="cy_cmt_count">评论</span>
+                        <span id="sourceId::{PostID}" class="disqus-comment-count" data-disqus-url="{Permalink}">评论</span>
                       </a>
                     </span>
                     <a class="entry-readmore" href="{Permalink}">阅读全文 <i class="itrangle2"></i></a>
@@ -273,8 +204,10 @@
        <!-- .navigation --> 
        <!-- ...comments -->
        {block:PermalinkPage}
-         <div id="disqus_thread"></div>
-        <div id='SOHUCS' sid='{block:Posts}{PostID}{/block:Posts}'></div>
+         <div id="comment">
+           <div id="disqus_thread">
+           </div>
+         </div>
        {/block:PermalinkPage}
 
       </div>
@@ -348,12 +281,13 @@
     Copyright 
     <a href="{BlogURL}wp-login.php" target="_blank">&copy;</a> {CopyrightYears} IT乐吧博客 All Rights Reserved. 沪ICP备11023011号-3 
     <a href="http://www.tumblr.com/" target="_blank">自豪地采用Tumblr!</a>
+    <a href="http://t.cn/RLK7ELw" rel="nofollow">AlfredWorkflow</a>
    </div> 
    <!-- .site-info --> 
   </footer>
   <!-- #colophon -->
-  <script type="text/javascript" src="//img.alicdn.com/tfscom/TB14jcYIXXXXXbEXXXXXXXXXXXX.js"></script>
-  <script type="text/javascript">
+  <script type="text/javascript" data-cfasync="false" src="//img.alicdn.com/tfscom/TB14jcYIXXXXXbEXXXXXXXXXXXX.js"></script>
+  <script type="text/javascript" data-cfasync="false">
     (function(window,$,undefined){
         $('#nav_menu-2 a').hover(function(){
             if("undefined"===typeof window.moveBarOP)window.moveBarOP = $('#moveBar').css('top');
@@ -386,11 +320,11 @@
         }
         $.hasWebP().then(function() {
             $('img').each(function(){
-                $(this).attr('src', $(this).attr('data-src')+'_.webp');
+                $(this).attr('src', $(this).attr('data'+(("undefined"!==typeof window.devicePixelRatio && window.devicePixelRatio==2)?'':'-1x')+'-src')+'_.webp');
             });
         }, function() {
             $('img').each(function(){
-                $(this).attr('src', $(this).attr('data-src'));
+                $(this).attr('src', $(this).attr('data'+(("undefined"!==typeof window.devicePixelRatio && window.devicePixelRatio==2)?'':'-1x')+'-src'));
             });
         });
     {block:PermalinkPage}
@@ -407,7 +341,38 @@
     {/block:PermalinkPage}
     })(window,jQuery);
   </script>
-  <script>
+  {block:IndexPage}
+  <script type="text/javascript" data-cfasync="false">
+(function(window, $){
+    window.DISQUSWIDGETS = {
+        displayCount: function(json){
+            var c = {};
+            for(i in json.counts){
+                c[json.counts[i].id] = json.counts[i].comments;
+            }
+            for(i in c){
+                $('.disqus-comment-count[data-disqus-url="'+i+'"]').text(c[i]+' 条评论');
+            }
+        }
+    };
+
+    var data = '';
+    $('.disqus-comment-count').each(function(){
+        data += '2=' + escape($(this).attr('data-disqus-url')) + '&';
+    });
+    $.ajax({
+        url: 'http://iamxiazi.disqus.com/count-data.js',
+        type: 'get',
+        dataType: 'script',
+        data: data,
+        error:function() {
+            $('.disqus-comment-count').text('统计加载失败');
+        }
+    });
+})(window, jQuery);
+  </script>
+  {/block:IndexPage}
+  <script type="text/javascript" data-cfasync="false">
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -415,9 +380,6 @@
     ga('create', 'UA-37440040-1', 'auto');
     ga('send', 'pageview');
   </script>
-  {block:IndexPage}
-
-  {/block:IndexPage}
   <textarea style="display:none;">
   </body>
   </textarea>
